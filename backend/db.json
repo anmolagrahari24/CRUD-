@@ -1,0 +1,38 @@
+{
+  "employees": [
+    {
+      "id": "8e74",
+      "firstname": "John",
+      "middlename": "",
+      "lastname": "Doe",
+      "dob": "2026-02-11",
+      "email": "john@gmail.com",
+      "maritalstatus": "single",
+      "phoneno": "1234567890",
+      "address": {
+        "street": "gkp",
+        "city": "gurugram",
+        "state": "up",
+        "country": "india",
+        "zipcode": "12343"
+      }
+    },
+    {
+      "id": "60e8",
+      "firstname": "John",
+      "middlename": "",
+      "lastname": "Doe",
+      "dob": "2026-02-17",
+      "email": "john@gmail.com",
+      "maritalstatus": "single",
+      "phoneno": "0123456788",
+      "address": {
+        "street": "gkp",
+        "city": "NOIDA",
+        "state": "up",
+        "country": "UK",
+        "zipcode": "1788"
+      }
+    }
+  ]
+}

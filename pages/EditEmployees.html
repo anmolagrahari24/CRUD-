@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CRUD_APP/styles/EditEmployees.css">
+</head>
+<body>
+     <!-- NAVBAR -->
+    <nav class="navbar-container">
+      <figure class="logo">
+        <a href="/CRUD_APP/index.html">CRUD-APP</a>
+      </figure>
+
+      <div class="nav-links">
+        <a href="/CRUD_APP/pages/CreateEmployee.html">Create Employee</a>
+        <a href="/CRUD_APP/pages/AllEmployees.html">All Employees</a>
+      </div>
+    </nav>
+
+    <!-- FORM CONTAINER -->
+    <section class="form-wrapper">
+      <h1>Edit Employee</h1>
+
+      <form class="employee-form" id="employee-form">
+        <!-- FULL NAME -->
+        <div class="form-group">
+          <label>Full Name</label>
+          <div class="grid-3">
+            <input type="text" placeholder="First Name" id="firstname" required/>
+            <input type="text" placeholder="Middle Name" id="middlename" />
+            <input type="text" placeholder="Last Name" id="lastname" required/>
+          </div>
+        </div>
+
+        <!-- MARITAL STATUS & DOB -->
+        <div class="grid-2">
+          <div class="form-group">
+            <label>Marital Status</label>
+            <select id="maritalstatus" required>
+              <option value="" selected disabled>Select</option>
+              <option value="single">Single</option>
+              <option value="married">Married</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date" id="dob" required/>
+          </div>
+        </div>
+
+        <!-- EMAIL & MOBILE -->
+        <div class="grid-2">
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" placeholder="E-mail" id="email" required/>
+          </div>
+
+          <div class="form-group">
+            <label>Mobile Number <span>*</span></label>
+            <input type="tel" placeholder="Mobile Number" id="phoneno" required/>
+          </div>
+        </div>
+
+        <!-- ADDRESS -->
+        <div class="form-group">
+          <label>Home Address</label>
+          <input type="text" placeholder="Street Address" id="address" required/>
+        </div>
+
+        <div class="grid-2">
+          <input type="text" placeholder="City" id="city" required/>
+          <input type="text" placeholder="State / Province" id="state" required/>
+        </div>
+
+        <div class="grid-2">
+          <input type="text" placeholder="Country" id="country" required/>
+          <input type="text" placeholder="ZIP Code" id="zipcode" required/>
+        </div>
+
+        <!-- BUTTON -->
+        <button type="submit" class="submit-btn">UPDATE</button>
+      </form>
+    </section>
+
+    <script src="/CRUD_APP/scripts/EditEmployee.js"></script>
+
+</body>
+</html>
