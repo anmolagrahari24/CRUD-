@@ -40,8 +40,125 @@ a {
     background-color: white;
     color: black;
 }
+/* ====================== */
+/* ================== EMPLOYEES GRID ================== */
+#employees-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
 
+/* ================== EMPLOYEE CARD ================== */
 .emp-card {
-    border: 2px solid black;
-    margin: 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.emp-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ================== CARD HEADER ================== */
+.emp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.emp-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0a1f44;
+}
+
+.emp-id {
+  font-size: 12px;
+  font-weight: 600;
+  background: #eaf0ff;
+  color: #143c8b;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* ================== CARD SECTIONS ================== */
+.emp-info,
+.emp-contact,
+.emp-address {
+  margin-bottom: 12px;
+}
+
+.emp-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.emp-card strong {
+  color: #143c8b;
+}
+
+/* ================== ACTION BUTTONS ================== */
+.emp-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Edit Button */
+.edit-btn {
+  background: #0a1f44;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background: #143c8b;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background: #b02a37;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .emp-actions {
+    flex-direction: column;
+  }
 }

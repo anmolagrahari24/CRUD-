@@ -17,7 +17,7 @@ async function getEditEmployee() {
   const id = params.get("id");
 
   try {
-    let resp = await fetch(`http://localhost:5000/employees/${id}`);
+    let resp = await fetch(`https://crud-1-s11a.onrender.com/employees/${id}`);
     let data = await resp.json();
     console.log(data);
 
@@ -66,7 +66,7 @@ employeeFormEle.addEventListener("submit", async (e) => {
   };
 
   try {
-    let resp = await fetch(`http://localhost:5000/employees/${id}`, {
+    let resp = await fetch(`https://crud-1-s11a.onrender.com/employees/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -74,6 +74,7 @@ employeeFormEle.addEventListener("submit", async (e) => {
       body: JSON.stringify(updateEmployeeData),
     });
     console.log(resp);
+    window.location.href = "AllEmployees.html"
   } catch (err) {
     console.log(err);
   }

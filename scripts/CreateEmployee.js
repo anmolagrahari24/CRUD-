@@ -35,7 +35,7 @@ let newEmployeeData = {
 };
 
 try{
-let resp = await fetch("http://localhost:5000/employees",{
+let resp = await fetch("https://crud-1-s11a.onrender.com/employees",{
     method : "POST",
     header : {
         "Content-Type": "application/json",
